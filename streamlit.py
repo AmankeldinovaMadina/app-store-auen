@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 
@@ -70,20 +69,21 @@ def policy_page():
 
 
 def support_page():
-    st.title("BookIT AI App Support")
+    st.title("Auen-AI App Support")
     st.write(
         "Welcome to our App Support Page. Should you have any queries, require assistance with specific features, or even if you just wish to engage with us, please feel free to contact us at madina.amankeldinova@nu.edu.kz."
     )
 
 def main():
-    st.sidebar.title("Navigation")
+    st.title("Auen-AI App Store")
     pages = ["Privacy Policy", "App Support"]
-    selected_page = st.sidebar.selectbox("Go to", pages)
+    selected_page = st.selectbox("Navigation", pages)
 
     if selected_page == "Privacy Policy":
         policy_page()
     elif selected_page == "App Support":
         support_page()
+
 
 if __name__ == "__main__":
     main()
